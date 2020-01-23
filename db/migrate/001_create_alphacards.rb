@@ -1,4 +1,4 @@
-class CreateAlphacards < ActiveRecord::Migration
+class CreateAlphacards < ActiveRecord::Migration[5.2]
   def change
     create_table :alphacards do |t|
       t.string :cardtype
@@ -8,3 +8,4 @@ class CreateAlphacards < ActiveRecord::Migration
     end
   end
 end
+
